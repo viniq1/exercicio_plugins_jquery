@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha de cadastro</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,25 +17,37 @@
     <form>
         <div class="container">
             <label for="nome">Nome:
-                <input type="text" placeholder="Seu nome">
+                <input type="text" placeholder="Seu nome" name="nome" id="nome">
+                <span class="erro" id="erro"></span>
             </label>
             <label for="email">E-Mail:
-                <input type="email" placeholder="Seu e-mail">
+                <input type="email" placeholder="Seu e-mail" name="email" id="email">
+                <span class="erro" id="erro"></span>
             </label>
             <label for="tel">Telefone:
-                <input type="tel" placeholder="Seu telefone">
+                <input type="tel" placeholder="Seu telefone" name="telefone" id="telefone">
+                <span class="erro" id="erro"></span>
             </label>
             <label for="CPF">CPF:
-                <input type="number" placeholder="Seu CPF">
+                <input type="text" placeholder="Seu CPF" name="cpf" id="cpf">
+                <span class="erro" id="erro"></span>
             </label>
             <label for="endereco">Endereço completo:
-                <input type="text" placeholder="Seu endereço completo">
+                <input type="text" placeholder="Seu endereço completo" name="endereco" id="endereco">
+                <span class="erro" id="erro"></span>
             </label>
             <label for="CEP">CEP:
-                <input type="number" placeholder="Seu CEP">
+                <input type="text" placeholder="Seu CEP" name="cep" id="cep">
+                <span class="erro" id="erro"></span>
             </label>
             <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
         </div>
     </form>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="JS/jquery.mask.min.js"></script>
+    <script src="JS/jquery.validate.min.js"></script>
+    <script src="JS/messages_pt_BR.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
