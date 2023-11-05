@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $('header button').click(function(){
-        $('form').slideDown();
+        $('form').slideToggle();
     })
 
     $('#telefone').mask('(00) 00000-0000');
